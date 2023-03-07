@@ -1,0 +1,6 @@
+feature: Sample API Tests
+
+Scenario: Test a sample GET Api
+Given url is 'https://petstore.swagger.io/v2/pet/'
+When get
+Then status 200
