@@ -2,7 +2,7 @@ Feature: API
   Scenario Outline: Find pet by status
     Given url 'https://petstore.swagger.io/v2/pet/'
     And path 'findByStatus'
-    And param status = <petStatus>
+    And param status = <petStatus>;
     When method get
     Then status 200
     Examples:
@@ -35,7 +35,7 @@ Feature: API
   Scenario: Update an existing pet
     Given url 'https://petstore.swagger.io/v2/pet'
     And path 'pet'
-    And param status = 'doggie'
+    And param status = 'doggies'
     When method put
     Then status 405
 
